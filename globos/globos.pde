@@ -18,17 +18,19 @@ class Globo
   void dibujate()
   {
       ellipse(x,y,100,150);
+      image(cara,x-10,y-15,50,50);
   }
   
 }
 
 ArrayList<Globo> globos;
-
+PImage cara;
 
 void setup()
 {
   size(640,480);
-  globos = new ArrayList<Globo>();  
+  globos = new ArrayList<Globo>();
+  cara = loadImage("cara.png");
 }
 
 void draw()
